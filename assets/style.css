@@ -1,0 +1,174 @@
+
+* {
+    font-family: "Raleway", sans-serif;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+
+body {
+    width: 1340px;
+    margin: 0 auto; 
+}
+
+.logo {
+    height: 29px;
+    width: 94px;
+    padding-top: 65px;
+}
+
+
+a {
+    
+    float: right; 
+    padding: 0px 30px;
+    font-size: 15px;
+    color:  black;
+    text-decoration: none;
+    display: flex;
+    transition: none;
+    padding-top: 40px;   
+}
+
+
+ a:hover {
+    
+        border-top-style: solid;
+        border-color: #0065FC;
+        padding-top: 35px;
+        color: #0065FC;     
+}
+
+.nav {
+    display: flex; 
+    justify-content: flex-start;
+
+}
+
+
+.nav__btn {
+    background-color:#0065FC;
+    border-radius: 0px 10px 10px 0px;
+    height: 40px;
+    width: 100px;
+    color: white;
+    border: none;
+    font-size: 15px;
+}
+
+.form-control {
+    height: 40px;
+    padding-right: 0;
+
+    
+}
+
+
+
+
+.nav__search {
+    border-radius: 0 0 0 0;
+    border: 0.1px solid rgb(235, 234, 234);
+    padding-left: 10px;
+   
+}
+
+.nav__btn--disabled {
+    color: black;
+    border-radius: 10px 0 0 10px;
+    border: none;
+    background-color: rgb(219, 219, 219);
+    width: 35px;
+}
+
+.container {
+    display: flex;
+    align-items: baseline;
+    
+    
+
+}
+
+.container__filtres-col {
+    display: flex;
+    padding-left: 50px;
+
+
+}
+
+.filterbtn {
+    padding-top: 30px;
+    padding-left: 24px;
+}
+
+.container__text-col {
+    padding-right: 0px;
+    
+}
+
+
+
+.filtres__conteneur {
+    border-radius: 20px 20px 20px 20px;
+    border: 1px solid rgb(184, 184, 184);
+    background: white;
+    height: 40px;
+    font-size: 15px;
+    padding: 0px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+    
+.element {
+
+    background-color: rgb(184, 184, 184);
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    color: #0065FC;
+    
+}
+
+.button__type-filter {
+    width: 120px;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    padding: 0 15px;
+    
+}
+
+.fa-info-circle {
+    
+    background-color: #0065FC;
+    border-radius: 50%;
+    color: white;
+    border: 3px rgb(184, 184, 184);
+    
+}
+
+.container__main {
+    width: 884px; 
+    height: 631px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 2.5%;
+}
+
+.aside {
+    width: 424px; 
+    height: 628px;
+    background-color: rgb(184, 184, 184);
+    border-radius: 2.5%;
+}
+
+.main {
+    display: flex;
+    justify-content: baseline;
+    justify-content: space-between;
+}

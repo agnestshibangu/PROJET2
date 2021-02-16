@@ -123,7 +123,7 @@ a {
     
 .element {
 
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(235, 234, 234);;
     height: 40px;
     width: 40px;
     border-radius: 50%;
@@ -156,19 +156,84 @@ a {
 .container__main {
     width: 884px; 
     height: 631px;
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(235, 234, 234);
     border-radius: 2.5%;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+ 
+}
+
+.inside {
+    padding-top: 91px;
+    padding-bottom: 207px;
+    padding-left: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 .aside {
     width: 424px; 
     height: 628px;
-    background-color: rgb(184, 184, 184);
+    background-color: rgb(235, 234, 234);
     border-radius: 2.5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+
 }
 
 .main {
     display: flex;
     justify-content: baseline;
     justify-content: space-between;
+}
+ 
+/* --------- CARDS WITHIN MAIN COINTAINER AND ASIDE CONTAINER --------- */
+
+
+.card {
+    width: 246px;
+    height: 201px;
+    background-color: white;
+    border-radius: 8%;
+    margin-right: 30px;
+    margin-top: 30px;
+    
+}
+
+.fa-star {
+    color: #0065FC;
+}
+
+.fa-star--grey {
+    color:  rgb(235, 234, 234);
+}
+
+
+.card-body {
+    width: 225px;
+    height: 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding-left: 15px;
+
+  
+}
+
+.card-img-top {
+    width: 236px;
+    height: 114px;
+    
+}
+
+.footer {
+    padding-top: 50px;
+    width: 100%;
+    height: 218px;
+    background-color:  rgb(235, 234, 234);
+    padding: none;
 }

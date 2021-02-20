@@ -178,7 +178,7 @@ a {
     margin: 0;
 }
 
-/* --------- GRID MAIN CONTAINER --------- */
+/* --------- GRID MAIN SECTION INSIDE --------- */
 
 .inside {
  
@@ -186,13 +186,11 @@ a {
     display: flex;
     flex-wrap: wrap;
     height: 430px;
-    max-width: 803px;
+    width: 803px;
     padding-top: 23px;
  
     
 }
-
-
 
 .card-body {
     display: flex;
@@ -326,15 +324,81 @@ a {
 
 /* --------- ACTIVITIES SECTION TITLE --------- */
 
-.activities-section__inside {
-    width: 1339px;
-    height: 446px;
-    background-color: pink;
-
-}
-
 
 #title3 {
     margin: 65px 0 26px 0;
 }
+.activities-section__grid {
+    
+    max-width: 1339px;
+    
+    height: 447px;
+    background-color: pink;
+    display: flex;
+    justify-content: space-between;
+}
+
+.grid-item {
+    height: 447px;
+    width: 302px;
+    background-color: rgb(173, 173, 173);
+    margin-left: 0;
+    border-radius: 2.5%;
+    display: flex;
+    align-items: flex-end;
+}
+
+.card-activity-title {
+  width: 302px;
+  height: 56px;
+  background-color: white;
+
+}
+
+
+
+
+/* GRID COLUMN 2/4 */
+
+.divided {
+    display: flex; 
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+}
+
+.divided_img {
+    width: 302px;
+    background-color: red;
+    display: flex;
+    align-items: flex-end;
+}
+
+.divided--1-1 {
+  
+    height: 235px;
+    
+  
+}
+
+.divided--1-2 {
+    
+    height: 164px;
+ 
+  
+  
+}
+
+/* GRID COLUMN 4/4 */
+
+.divided--1-3 {
+
+    height: 200px;
+   
+
+}
+
+
+
     

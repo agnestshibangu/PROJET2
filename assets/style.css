@@ -1,9 +1,8 @@
 
 * {
     font-family: "Raleway", sans-serif;
-    font-size: 16px;
-    line-height: 1.75;
-}
+  /*  font-size: 16px; */
+  /* line-height: 1.75; */}
 
 
 body {
@@ -153,55 +152,131 @@ a {
     
 }
 
+
+/* MAIN */
+
 .container__main {
     width: 884px; 
     height: 631px;
     background-color: rgb(235, 234, 234);
     border-radius: 2.5%;
-    flex-wrap: wrap;
-    flex-direction: row;
+    display: flex; 
+    flex-direction: column;
     
- 
+   
 }
 
+
+.container__main link {
+    padding-bottom: none;
+    padding-left: 40px;
+}
+
+.container__main-title {
+    padding-left: 41px;
+    padding-top: 45px;
+    margin: 0;
+}
+
+/* --------- GRID MAIN CONTAINER --------- */
+
 .inside {
-    padding-top: 91px;
-    padding-bottom: 207px;
+ 
     padding-left: 40px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
+    height: 430px;
+    max-width: 803px;
+    padding-top: 23px;
+ 
+    
 }
+
+
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    padding-top: 11px;
+    padding-left: 17px;
+
+
+}
+
+
+/* ASIDE */
+
 
 .aside {
     width: 424px; 
     height: 628px;
     background-color: rgb(235, 234, 234);
     border-radius: 2.5%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
+    
 
 }
+
+
+.aside__top{
+    
+    padding-left: 40px;
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 0px;
+
+}
+
+.fa-chart-line {
+    padding-right: 40px;
+    display: flex; 
+    width: 22px;
+    height: 18px;
+   
+
+}
+
+
+.aside_cards {
+    display: flex;
+    align-items: space-between;
+    align-items: center;
+    flex-direction: column; 
+    padding-top: 26px;
+  
+}
+
+.aside__card {
+    background-color: white;
+    width: 343px;
+    height: 146px;
+    border-radius: 8%;
+    margin-bottom: 32px;
+    
+    
+}
+ 
+/* --------- CARDS WITHIN MAIN COINTAINER AND ASIDE CONTAINER --------- */
+
+
 
 .main {
     display: flex;
     justify-content: baseline;
     justify-content: space-between;
 }
- 
-/* --------- CARDS WITHIN MAIN COINTAINER AND ASIDE CONTAINER --------- */
-
 
 .card {
     width: 246px;
     height: 201px;
     background-color: white;
     border-radius: 8%;
-    margin-right: 30px;
-    margin-top: 30px;
     
+    margin-top: 30px;
+  
+   
+    
+
 }
 
 .fa-star {
@@ -213,13 +288,17 @@ a {
 }
 
 
-.card-body {
+.aside__card-body {
     width: 225px;
     height: 57px;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding-left: 15px;
+    justify-content: flex-end;
+    padding-left: 154px;
+  
+    padding-top:20px;
+    align-items: left;
+    
 
   
 }
@@ -230,10 +309,32 @@ a {
     
 }
 
+
 .footer {
-    padding-top: 50px;
-    width: 100%;
-    height: 218px;
-    background-color:  rgb(235, 234, 234);
-    padding: none;
+    width: 100%; 
+    height : 200px;
+
+    
+     padding-left: 0px; 
+    padding-right: 0px;
+ background-color: rgb(255, 0, 0);
+ padding-left: 0;
+ padding-right: 0;
+    }
+
+
+
+/* --------- ACTIVITIES SECTION TITLE --------- */
+
+.activities-section__inside {
+    width: 1339px;
+    height: 446px;
+    background-color: pink;
+
 }
+
+
+#title3 {
+    margin: 65px 0 26px 0;
+}
+    

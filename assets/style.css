@@ -1,6 +1,6 @@
 
 * {
-    font-family: "Raleway", sans-serif;
+    font-family: "Raleway";
   /*  font-size: 16px; */
   /* line-height: 1.75; */}
 
@@ -25,13 +25,9 @@ body {
  
 } */
 
-
 .logo {
-    height: 29px;
-    width: 94px;
-    padding-top: 65px;
+    padding-top: 15px;
 }
-
 
 a {
     
@@ -198,14 +194,14 @@ a {
 
 .inside {
  
-    padding-left: 40px;
-    display: flex;
-    flex-wrap: wrap;
-    height: 430px;
-    width: 803px;
-    padding-top: 23px;
- 
-    
+padding-left: 40px;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-gap: 31px;
+
+height: auto;
+width: 802px;
+padding-top: 23px;
 }
 
 .card-body {
@@ -285,12 +281,6 @@ a {
     height: 201px;
     background-color: white;
     border-radius: 8%;
-    
-    margin-top: 30px;
-  
-   
-    
-
 }
 
 .fa-star {
@@ -338,7 +328,7 @@ a {
     max-width: 1339px;
     
     height: 447px;
-    background-color: pink;
+    background-color: rgb(255, 255, 255);
     display: flex;
     justify-content: space-between;
 }
@@ -346,9 +336,9 @@ a {
 .grid-item {
     height: 447px;
     width: 302px;
-    background-color: rgb(173, 173, 173);
+    background-color: rgb(235, 234, 234););
     margin-left: 0;
-    border-radius: 2.5%;
+    border-radius: 2.5% 2.5% 6% 6%;
     display: flex;
     align-items: flex-end;
 }
@@ -370,13 +360,14 @@ a {
     display: flex; 
     flex-direction: column;
     justify-content: space-between;
+    background-color: white;
     
     
 }
 
 .divided_img {
     width: 302px;
-    background-color: rgb(168, 94, 94);
+    background-color: rgb(235, 234, 234);;
     display: flex;
     align-items: flex-end;
     border-radius: 20px;
@@ -442,7 +433,7 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
-    padding-right: 
+
  
     
     

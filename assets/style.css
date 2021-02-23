@@ -321,14 +321,14 @@ padding-top: 23px;
 
 
 #title3 {
-    margin: 65px 0 26px 0;
+    margin: 65px 0 26px 0; 
 }
 .activities-section__grid {
     
     max-width: 1339px;
     
     height: 447px;
-    background-color: rgb(241, 50, 50);
+    background-color: rgb(255, 147, 147);
     display: flex;
     justify-content: space-between;
 }

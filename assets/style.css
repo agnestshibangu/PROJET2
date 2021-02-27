@@ -110,9 +110,7 @@ padding-top: 40px;
 
 .container__filtres-col {
     display: flex;
-    padding-left: 50px;
-
-
+    /* padding-left: 50px; */
 }
 
 .filterbtn {
@@ -202,13 +200,18 @@ padding-top: 40px;
 
 .inside {
  
-padding-left: 40px;
+/* padding-left: 40px; */
+ 
 display: grid;
+ 
 grid-template-columns: repeat(3, 1fr);
+ 
 grid-gap: 31px;
-
+ 
 height: auto;
+ 
 width: 802px;
+ 
 padding-top: 23px;
 }
 
@@ -258,10 +261,9 @@ padding-top: 23px;
 .aside_cards {
     display: flex;
     align-items: space-between;
-    align-items: center;
-    flex-direction: column; 
+    /* align-items: center; */
+    flex-direction: column;
     padding-top: 26px;
-  
 }
 
 .aside__card {
@@ -469,21 +471,35 @@ header {
     order: 0;
     width: 97px;
     height: 31px;
+    padding-top: 30px;
 }
 
-a {
-    float: left;
+#inscription-btn {
+   
     order: 1;
-    padding-left: 10px;
+    padding-left: 285px;
+    padding-top: 42px;
+    width: fit-content;
 }
 
 #link-top {
     width: 100%;
     order: 3;
-    float: left;
-  
+    float: right;
+    display: flex;
+    justify-content: space-between;
+    transition: none;
 }
 
+a:hover {
+    border-bottom-style: solid;
+    border-color: #0065FC;
+    padding-bottom: 35px;
+    color: #0065FC;    
+    padding-top: 0; 
+    border-top: none;
+    transition: none;
+}
 
 
 .slogan {
@@ -501,6 +517,12 @@ a {
     flex-direction: column;
 }
 
+.container__filtres-col {
+    display: flex; 
+    flex-wrap: wrap;
+    padding-left: 0;
+}
+
 /* main section */ 
 
 .main {
@@ -514,10 +536,20 @@ a {
 }
 
 .inside {
-    display: block;
+    display: flex;
     flex-direction: column;
+    justify-content: center;
+     padding-left: 25px;
+}
+
+.card{
+    width: 335px;
+    height: 145px;
+    align-items: center;
 
 }
+
+
 .aside {
     width: 100%;
 }
@@ -527,6 +559,7 @@ a {
 .grid-item {
     width: 335px;
     height: 192px;
+    
 }
 
 .divided {
@@ -535,29 +568,26 @@ a {
 }
 
 .activities-section__grid {
-    display: block;
     flex-direction: column;
     height: auto;
-    margin: auto;
+    padding: 33px auto 50px auto;
+    display: flex;
+    gap: 11px;
 }
-
-footer {
+    footer {
     background-color: rgb(219, 219, 219);
     left: 0;
     margin-top: 62px;
     bottom: 0;
     height: auto;
     width: 100%;
-    overflow: hidden;
+    
 }
 
 .footer-content {
-    margin-top: 55px;
-    margin-bottom: 50px;
-    width: 1020px;
     padding-left: 40px;
     display: flex;
-   flex-direction: column;
-    align-items: flex-start;
-    justify-content: space-between;
+    flex-direction: column;
+  
 }
+ 

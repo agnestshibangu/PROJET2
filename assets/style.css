@@ -1,8 +1,9 @@
 
 * {
     font-family: "Raleway";
-  /*  font-size: 16px; */
-  /* line-height: 1.75; */}
+    /* font-size: 16px; */
+    /* line-height: 1.75; */
+    }
 
   html {
     position: relative;
@@ -31,14 +32,21 @@ body {
 
 a {
     
-    float: right; 
-    padding: 0px 30px;
-    font-size: 15px;
-    color:  black;
-    text-decoration: none;
-    display: flex;
-    transition: none;
-    padding-top: 40px;   
+float: right;
+    
+padding: 0px 30px;
+    
+font-size: 15px;
+    
+color:  black;
+    
+text-decoration: none;
+    
+display: flex;
+    
+transition: none;
+    
+padding-top: 40px;
 }
 
 
@@ -318,7 +326,7 @@ padding-top: 23px;
 
 
 /* --------- ACTIVITIES SECTION TITLE --------- */
-
+  
 
 #title3 {
     margin: 65px 0 26px 0; 
@@ -409,7 +417,6 @@ footer {
     height: 275px;
     width: 100%;
     overflow: hidden;
-    
 }
 
 .footer-content {
@@ -433,11 +440,124 @@ footer {
     display: flex;
     flex-direction: column;
     text-align: left;
+}
 
- 
-    
-    
+
+/* --------- PARTIE RESPONSIVE --------- */
+
+
+#maincontent {
+    display: block;
+}
+
+
+@media (max-width: 768px) {
+
+    body {
+        width: auto;
+    }
+
+header {
+    display: block;
+    flex-direction: column;
+    width: 100%;
+    height: auto
+}
+
+.logo {
+    float: left;
+    order: 0;
+    width: 97px;
+    height: 31px;
+}
+
+a {
+    float: left;
+    order: 1;
+    padding-left: 10px;
+}
+
+#link-top {
+    width: 100%;
+    order: 3;
+    float: left;
+  
 }
 
 
 
+.slogan {
+    float: left;
+    order: 4;
+    display: block;
+    flex-direction: column;
+}
+.nav {
+    width: 100%;
+}
+
+.container{
+    display: block;
+    flex-direction: column;
+}
+
+/* main section */ 
+
+.main {
+    display: block;
+}
+.container__main {
+    width: 100%;
+    height: auto; 
+    display: block;
+    flex-direction: column;
+}
+
+.inside {
+    display: block;
+    flex-direction: column;
+
+}
+.aside {
+    width: 100%;
+}
+
+/* ACTIVITIES */
+
+.grid-item {
+    width: 335px;
+    height: 192px;
+}
+
+.divided {
+    width: 335px;
+    height: 192px;
+}
+
+.activities-section__grid {
+    display: block;
+    flex-direction: column;
+    height: auto;
+    margin: auto;
+}
+
+footer {
+    background-color: rgb(219, 219, 219);
+    left: 0;
+    margin-top: 62px;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+.footer-content {
+    margin-top: 55px;
+    margin-bottom: 50px;
+    width: 1020px;
+    padding-left: 40px;
+    display: flex;
+   flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}

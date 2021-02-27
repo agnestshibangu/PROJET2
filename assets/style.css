@@ -10,6 +10,7 @@
     min-height: 100%;
 }
 
+
 body {
     margin: 0 auto 275px auto;
     /* bottom = footer height */
@@ -30,6 +31,10 @@ body {
     padding-top: 15px;
 }
 
+#inscription-btn {
+    float: right;
+}
+
 a {
     
 float: right;
@@ -46,16 +51,19 @@ display: flex;
     
 transition: none;
     
-padding-top: 40px;
+
 }
 
 
  a:hover {
     
-        border-top-style: solid;
-        border-color: #0065FC;
-        padding-top: 35px;
-        color: #0065FC;     
+border-top-style: solid;
+    
+border-color: #0065FC;
+    
+/* padding-top: 35px; */
+    
+color: #0065FC;
 }
 
 .nav {
@@ -475,10 +483,11 @@ header {
 }
 
 #inscription-btn {
-   
     order: 1;
-    padding-left: 285px;
+    
     padding-top: 42px;
+    padding-bottom: 55px;
+    padding-right: 22px;
     width: fit-content;
 }
 
@@ -489,14 +498,20 @@ header {
     display: flex;
     justify-content: space-between;
     transition: none;
+    
+}
+
+a {
+    width: 50%;
+    justify-content: center;
 }
 
 a:hover {
     border-bottom-style: solid;
     border-color: #0065FC;
     padding-bottom: 35px;
-    color: #0065FC;    
-    padding-top: 0; 
+    padding-top: 0;
+    color: #0065FC;
     border-top: none;
     transition: none;
 }
@@ -507,20 +522,50 @@ a:hover {
     order: 4;
     display: block;
     flex-direction: column;
+    padding-left: 20px;
+    padding-top: 35px;
 }
 .nav {
-    width: 100%;
+    padding-top: 35px;
+    width: 333px;
+    padding-left: 20px;
 }
+
+.nav__btn--disabled {
+    width: 51px;
+    height: 51px;
+}
+
+.nav__btn {
+    width: 52px;
+    height: 52px;
+}
+
+.nav__search{
+    width: 230px;
+}
+
 
 .container{
     display: block;
     flex-direction: column;
 }
 
+.container__text-col {
+    padding-left: 22px;
+    padding-top: 37px;
+}
+
 .container__filtres-col {
     display: flex; 
     flex-wrap: wrap;
-    padding-left: 0;
+    width: auto;
+}
+
+.grey-description {
+    padding-left: 24px;
+    padding-top: 31px;
+    margin: 0;
 }
 
 /* main section */ 

@@ -221,6 +221,8 @@ height: auto;
 width: 802px;
  
 padding-top: 23px;
+ 
+margin:  0 auto;
 }
 
 .card-body {
@@ -257,12 +259,10 @@ padding-top: 23px;
 }
 
 .fa-chart-line {
-    padding-right: 40px;
-    display: flex; 
+    /* padding-right: 40px; */
+    display: flex;
     width: 22px;
     height: 18px;
-   
-
 }
 
 
@@ -276,12 +276,11 @@ padding-top: 23px;
 
 .aside__card {
     background-color: white;
-    width: 343px;
+    width: 337px;
     height: 146px;
     border-radius: 8%;
     margin-bottom: 32px;
-    
-    
+    margin: 0 auto;
 }
  
 /* --------- CARDS WITHIN MAIN COINTAINER AND ASIDE CONTAINER --------- */
@@ -338,9 +337,7 @@ padding-top: 23px;
 /* --------- ACTIVITIES SECTION TITLE --------- */
   
 
-#title3 {
-    margin: 65px 0 26px 0; 
-}
+
 .activities-section__grid {
     
 max-width: 1339px;
@@ -356,7 +353,6 @@ justify-content: space-between;
 
 .grid-item {
     height: 447px;
-    width: 302px;
     background-color: rgb(235, 234, 234);
     margin-left: 0;
     border-radius: 2.5% 2.5% 6% 6%;
@@ -367,9 +363,8 @@ justify-content: space-between;
 .card-activity-title {
   width: 302px;
   height: 56px;
-  background-color: #fff;
+  background-color: rgb(45, 171, 255);
   border-radius: 0 0 20px 20px;
-    padding-left: 20px;
 }
 
 
@@ -392,18 +387,23 @@ justify-content: space-between;
     border-radius: 20px;
 }
 
-.divided--1-1 {
-  
-/* height: 235px; */
+
+.div-1 {
+    width: 303px;
+    height: 239px;
 }
 
-.divided--1-2 {
-    
-    height: 164px;
- 
-  
-  
+.div-2 {
+    width: 303px;
+    height: 166px;
 }
+
+.div-3 {
+    width: 303px;
+    height: 198px;
+}
+
+
 
 /* GRID COLUMN 4/4 */
 
@@ -419,7 +419,7 @@ justify-content: space-between;
     
 footer {
     background-color: rgb(219, 219, 219);
-    position: absolute;
+    /* position: absolute; */
     left: 0;
     margin-top: 62px;
     bottom: 0;
@@ -581,12 +581,38 @@ a:hover {
     
 }
 
+.link {
+
+padding-top: 35px;
+
+margin:  0;
+
+padding-left: 20px;
+}
+
+.aside__title {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0;
+}
 
 .aside {
-    width: 100%;
+    width: 375px;
     order: 0;
-  
+}
 
+.aside_cards {
+    gap: 11px;
+    padding-top: 43px;
+    width: 337px;
+    display: flex;
+    margin: 0 auto;
+}
+
+.fa-chart-line {
+    width: 21px;
+    height: 18px;
+    
 }
 
 .container {
@@ -620,20 +646,18 @@ a:hover {
 
 /* ACTIVITIES */
 
-#title3 {
-    padding-left: 21px;
-}
+#title3 {margin: 58px 0 33px 23px;}
 
 .grid-item {
-    width: 302px;
+    width: 336px;
     height: 192px;
     margin-bottom: 24px;
-
 }
 
 
 .activities-section {
     height: auto;
+    width: 100%;
 }
 
 .divided--1-1 {
@@ -644,9 +668,23 @@ a:hover {
     display: flex;
     flex-direction: column;
     height: auto;
-    padding-left: 21px;
     display: flex;
     gap: 11px;
+    width: 336px;
+    margin:  0 auto;
+}
+
+.divided_img {
+    width: 336px;
+    background-color: rgb(235, 234, 234);
+    display: flex;
+    align-items: flex-end;
+    border-radius: 20px;
+}
+
+
+.card-activity-title {
+    width: 336px;
 }
 
 

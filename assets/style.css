@@ -657,7 +657,7 @@ padding-left: 20px;
 
 .activities-section {
     height: auto;
-    width: 100%;
+    width: 375px;
 }
 
 .divided--1-1 {
@@ -668,7 +668,6 @@ padding-left: 20px;
     display: flex;
     flex-direction: column;
     height: auto;
-    display: flex;
     gap: 11px;
     width: 336px;
     margin:  0 auto;

@@ -5,27 +5,16 @@
     /* line-height: 1.75; */
     }
 
-  html {
-    position: relative;
-    min-height: 100%;
+
+    
+
+.maincontainer {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
 }
 
 
-body {
-    margin: 0 auto 275px auto;
-    /* bottom = footer height */
-    width: 1340px;
-    height: 100%;
-}
-  /*
-body {
-    
-    width: 1340px;
-    
-    margin:  0 auto;
-   
- 
-} */
 
 .logo {
     padding-top: 15px;
@@ -122,7 +111,7 @@ color: #0065FC;
 }
 
 .filterbtn {
-    padding-top: 30px;
+    padding-top: ;
     padding-left: 24px;
 }
 
@@ -210,11 +199,7 @@ color: #0065FC;
  
 /* padding-left: 40px; */
  
-display: grid;
- 
-grid-template-columns: repeat(3, 1fr);
- 
-grid-gap: 31px;
+
  
 height: auto;
  
@@ -223,6 +208,15 @@ width: 802px;
 padding-top: 23px;
  
 margin:  0 auto;
+}
+
+.inside-inside {
+
+display: grid;
+
+grid-template-columns: repeat(3, 1fr);
+
+grid-gap: 31px;
 }
 
 .card-body {
@@ -277,7 +271,7 @@ margin:  0 auto;
 .aside__card {
     background-color: white;
     width: 337px;
-    height: 146px;
+    height: 145px;
     border-radius: 8%;
     margin-bottom: 32px;
     margin: 0 auto;
@@ -296,7 +290,7 @@ margin:  0 auto;
 .card {
     width: 246px;
     height: 201px;
-    background-color: white;
+    background-color: #c16666;
     border-radius: 8%;
 }
 
@@ -367,7 +361,9 @@ justify-content: space-between;
   border-radius: 0 0 20px 20px;
 }
 
-
+.inner {
+    padding-left: 19px;
+}
 
 
 /* GRID COLUMN 2/4 */
@@ -460,7 +456,8 @@ footer {
 }
 
 
-@media (max-width: 768px) {
+
+@media (max-width: 766px){
 
     body {
         width: auto;
@@ -477,9 +474,11 @@ header {
     float: left;
     order: 0;
     width: 97px;
-    height: 31px;
-    padding-top: 30px;
+    height: 50px;
+    padding-top: 25px;
+    margin-left: 20px;
 }
+
 
 #inscription-btn {
     order: 1;
@@ -503,12 +502,17 @@ header {
 a {
     width: 50%;
     justify-content: center;
+    border-bottom-style: solid;
+    border-color: #DEEBFF;
+    padding-bottom: 13px;
+    padding-top: 0;
+    font-weight: normal;
 }
 
 a:hover {
     border-bottom-style: solid;
     border-color: #0065FC;
-    padding-bottom: 35px;
+    padding-bottom: 13px;
     padding-top: 0;
     color: #0065FC;
     border-top: none;
@@ -524,11 +528,22 @@ a:hover {
     padding-left: 20px;
     padding-top: 35px;
 }
+
+.maintitle{
+    margin: 0;
+}
+
+.greytext{
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: normal;
+}
+
 .nav {
-    padding-top: 35px;
-    width: 333px;
-    padding-left: 20px;
-    order: 5;
+   padding-top: 40px;
+   width: 330px;
+   padding-left: 20px;
+   order: 5;
 }
 
 .nav__btn--disabled {
@@ -573,37 +588,41 @@ a:hover {
  
 }
 
+}
+
 /* main section */ 
+
+
 
 .main {
     display: flex;
     flex-direction: column;
-    
+    /* margin: 0 auto; */
 }
 
-.link {
-
-padding-top: 35px;
-
-margin:  0;
-
-padding-left: 20px;
-}
 
 .aside__title {
     display: flex;
     justify-content: space-between;
-    margin-top: 0;
+    margin: 0;
+    padding-bottom: 25px;
 }
 
 .aside {
     width: 375px;
     order: 0;
+    height: 579px;
+}
+
+.aside__cards-group {
+    display: flex;
+    gap: 11px;
+    flex-direction: column;
 }
 
 .aside_cards {
-    gap: 11px;
-    padding-top: 43px;
+
+    padding-top: 40px;
     width: 337px;
     display: flex;
     margin: 0 auto;
@@ -612,6 +631,7 @@ padding-left: 20px;
 .fa-chart-line {
     width: 21px;
     height: 18px;
+    
     
 }
 
@@ -624,13 +644,22 @@ padding-left: 20px;
     order: 1;
 }
 
-.inside {
+.container__main-title{
+ 
+    padding: 0;
+   
+}
+
+.inside-inside{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    /* justify-content: center; */
     padding-left: 25px;
-   
-  
+    padding-top: 40px;
+}
+
+.link {
+    margin: 0;
 }
 
 
@@ -646,18 +675,30 @@ padding-left: 20px;
 
 /* ACTIVITIES */
 
-#title3 {margin: 58px 0 33px 23px;}
+#title3 {
+    margin-left: 20px;
+    margin-top: 0;
+    margin-bottom: 33px;
+}
+
 
 .grid-item {
     width: 336px;
     height: 192px;
-    margin-bottom: 24px;
+    margin-bottom: 11px;
 }
 
 
+
+
 .activities-section {
+    display: flex;
+    flex-direction: column;
     height: auto;
     width: 375px;
+    margin:0 auto;
+    
+
 }
 
 .divided--1-1 {
@@ -665,13 +706,13 @@ padding-left: 20px;
 }
 
 .activities-section__grid {
-    display: flex;
     flex-direction: column;
     height: auto;
-    gap: 11px;
+    display: flex;
     width: 336px;
     margin:  0 auto;
 }
+
 
 .divided_img {
     width: 336px;
@@ -684,6 +725,7 @@ padding-left: 20px;
 
 .card-activity-title {
     width: 336px;
+    
 }
 
 
@@ -703,3 +745,55 @@ padding-left: 20px;
     flex-direction: column;
 }
  
+
+
+/* --------- PARTIE RESPONSIVE TABLET --------- */
+
+@media (min-width: 768px) and (max-width: 1200px){
+
+header {
+    display: flex;
+    justify-content: column;
+}
+
+.container {
+    height: fit-content;
+}
+
+.container__text-col {
+    padding-top: 0;
+    padding-left: 20px;
+}
+
+.container__filtres-col {
+    height: fit-content;
+    padding-top: 15px;
+}
+
+
+.inside-inside {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+}
+
+.activities-section {
+    width: 100%;
+}
+
+.activities-section__grid {
+    display: flex;
+    flex-direction: row; 
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+#grid-item-tablet1 {
+    height: 403px;
+}
+
+#grid-item-tablet2 {
+     height: 403px; 
+}
+
+}

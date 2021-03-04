@@ -495,9 +495,28 @@ footer {
 .activities-section { 
     padding-top: 50px;
 
+<<<<<<< HEAD
+=======
+.activities-section {
+    height: auto;
+    width: 100%;
+}
+>>>>>>> parent of c5f00ba (activities responsive part ok)
 
 
+<<<<<<< HEAD
     }
+=======
+.activities-section__grid {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    display: flex;
+    gap: 11px;
+    width: 336px;
+    margin:  0 auto;
+}
+>>>>>>> parent of c5f00ba (activities responsive part ok)
 
 
 /* --------- PARTIE RESPONSIVE TABLET --------- */

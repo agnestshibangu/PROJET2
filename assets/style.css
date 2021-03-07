@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     color: #232323;
+    margin-right: 0;
     }
 
 
@@ -13,7 +14,13 @@
     /* line-height: 1.75; */
     }
 
+header {
+    width:
+}
 
+img {
+    object-fit: cover;
+}
 
 .logo {
     padding-top: 50px;
@@ -22,7 +29,7 @@
 
 #inscription-btn {
     float: right;
-    padding-top: 50px;
+    padding-top: 45px;
 }
 
 .nav__btn_phone {
@@ -33,6 +40,7 @@
      display: flex;
      align-items: baseline;
      float: right;
+     padding-top: 45px;
 }
 
 
@@ -51,8 +59,7 @@ text-decoration: none;
 display: flex;
     
 transition: none;
-    
-
+:;
 }
 
 
@@ -95,6 +102,7 @@ color: #0065FC;
     font-size: 15px;
 }
 
+
 .form-control {
     height: 40px;
     padding-right: 0;
@@ -122,15 +130,14 @@ color: #0065FC;
 
 .container__filtres {
     display: flex;
-    align-items: baseline;
-    height: 50px;
+    height: auto;
 }
 
 .container__filtres-col {
     display: flex;
     flex-wrap: wrap;
     padding-top:  32px;
-    padding-bottom: 43px;
+    padding-bottom: 41px;
 }
 
 .filterbtn {
@@ -189,9 +196,7 @@ color: #0065FC;
     
 }
 
-.grey-description {
-    padding-top: 48px;
-}
+.grey-description {margin-bottom: 35px;}
 
 /* MAIN */
 
@@ -199,7 +204,7 @@ color: #0065FC;
     width: 100%;
     height: 631px;
     background-color: rgb(235, 234, 234);
-    border-radius: 2.5%;
+    border-radius: 10px;
     /* display: flex; */
     /* flex-direction: column; */
 }
@@ -210,7 +215,10 @@ color: #0065FC;
     padding-left: 40px;
 }
 
-.container__main-title {padding-bottom: 23px;}
+.container__main-title {
+    padding-bottom: 23px;
+    /* width: fit-content; */
+}
 
 /* --------- GRID MAIN SECTION INSIDE --------- */
 
@@ -220,22 +228,26 @@ color: #0065FC;
  
 height: auto;
  
-width: 802px;
+width: 100%;
  
 padding-top: 47px;
  
 margin:  0 auto;
+ 
+padding-left: 40px;
 }
 
 .inside-inside {
 
 display: grid;
 
-grid-template-columns: repeat(3, 1fr);
+grid-template-columns: repeat(3, 26%);
 
-grid-gap: 39px;
+grid-gap: 29px;
 
-width: 90%;
+margin: 0 auto;
+
+width: auto;
 }
 
 .card-body {
@@ -255,10 +267,16 @@ width: 90%;
     width: 424px;
     height: 628px;
     background-color: rgb(235, 234, 234);
-    border-radius: 2.5%;
+    border-radius: 10px;
     margin-left: 40px;
 }
 
+.card-img-aside {
+    width: 127px;
+    height: 135px;
+    margin: 5px;
+    border-radius: 10px 0 0 10px;
+}
 
 .aside__top{
     
@@ -299,6 +317,7 @@ padding-top: 45px;
     height: 145px;
     border-radius: 8%;
     margin-bottom: 32px;
+    display:  flex;
 }
  
 /* --------- CARDS WITHIN MAIN COINTAINER AND ASIDE CONTAINER --------- */
@@ -313,7 +332,7 @@ padding-top: 45px;
     width: 246px;
     height: 200px;
     background-color: white;
-    border-radius: 8%;
+    border-radius: 10px;
 }
 
 .fa-star {
@@ -335,15 +354,16 @@ padding-top: 45px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding-left: 154px;
     padding-top:20px;
-    align-items: left;
+    display: flex;
+    padding-left: 21px;
 }
 
 .card-img-top {
     width: 236px;
     height: 114px;
-    
+    margin: 5px;
+    border-radius: 10px 10px 0 0;
 }
 
 
@@ -379,10 +399,15 @@ justify-content: space-between;
     margin-left: 0;
     border-radius: 2.5% 2.5% 6% 6%;
     display: flex;
+    flex-direction: column;
     align-items: flex-end;
     width:  303px;
 }
 
+.card-img-activités {
+    width: 303px;
+    border-radius: 10px 10px 0 0;
+}
 .card-activity-title {
   width: 302px;
   height: 56px;
@@ -416,21 +441,29 @@ justify-content: space-between;
 .div-1 {
     width: 303px;
     height: 239px;
+    display:  flex;
+    flex-direction: column;
 }
 
 .div-2 {
     width: 303px;
     height: 166px;
+    display: flex;
+    flex-direction: column;
 }
 
 .div-3 {
     width: 303px;
+    display: flex;
+    flex-direction: column;
     height: 198px;
 }
 
 .div-4 {
     width: 303px;
     height: 198px;
+    display: flex;
+    flex-direction: column;
 }
 
 
@@ -443,6 +476,37 @@ justify-content: space-between;
    
 
 }
+
+
+/* IMAGES */
+
+
+#card-img-activités1 {
+    height: 447px;
+}
+
+#card-img-activités2 {
+    height: 181px ;
+}
+
+#card-img-activités3 {
+    height: 110px;
+}
+
+
+#card-img-activités4 {
+    height: 139px;
+}
+
+#card-img-activités5 {
+    height: 153px;
+}
+
+
+
+
+
+
 
 /* FOOTER */
 
@@ -506,10 +570,13 @@ footer {
     }
 
     #link-top {
-        margin-right: 20px;
-        margin-top: 20px;
+        padding-top: 51px;
     }
 
+    #inscription-btn {
+        padding-top: 50px;
+        margin-right: 30px;
+    }
     
 .nav__btn_phone {
     visibility: hidden;
@@ -530,6 +597,9 @@ footer {
         padding-top: 20px;
     }
 
+    .grey-description {
+        padding-top: 0px;
+    }
 
     .container__filtres-col {
     height:  fit-content;
@@ -557,13 +627,26 @@ footer {
 
     .aside__card-body {
         padding-left: 11px;
+        padding-top: 5px;
     }
 
+    .card-img-aside {
+        width: auto;
+        border-radius: 10px 10px 0 0;
+    }
     .aside__card {
     width: 30%;
     margin: 0;
+    height: 218px;
+    display:  flex;
+    flex-direction: column;
     }
     
+    .card-img-top {
+        width: 97%;
+        margin: 5px;
+    }
+
     .container__main {
         order: 0;
         height: auto;
@@ -572,6 +655,7 @@ footer {
     .inside-inside {
         grid-template-columns: repeat(2, 1fr);
         margin: 0 auto;
+        grid-gap: 10%;
     }
 
     .grid-item {
@@ -581,7 +665,8 @@ footer {
     }
 
     .card {
-    width: 290px;
+    width: 100%;
+    height: 210px;
     }
     
 
@@ -591,7 +676,7 @@ footer {
     }
 
     .div-2 {
-        height: 200px;
+        height: 166px;
         width: 347px;
     }
 
@@ -606,6 +691,10 @@ footer {
     }
 
     .card-activity-title {
+         width: 347px;
+    }
+
+    .card-img-activités {
         width: 347px;
     }
    
@@ -644,9 +733,12 @@ margin-left: 15px;
 
     .maincontainer{
         width: 100%;
-        background-color: rgb(253, 104, 241);
+        background-color: white;
     }
     
+    .grey-description1 {
+        
+    }
         
     body {
         background-color:white;
@@ -662,11 +754,9 @@ margin-left: 15px;
 
     
 
-    a {
-      width: 50%;
-      padding-left: 0;
-    }
+    .link-head {
 
+    }
 
     a:hover {
     
@@ -684,8 +774,14 @@ color: #0065FC;
     #link-top {
         order: 2;
         width: 100%;
-        display: flex;
-        margin:  0 auto;
+        padding-top: 0;
+        text-align: center;
+        /* display: flex; */
+        /* justify-content: center; */
+    }
+
+    .maintitle {
+        margin-top: 35px;
     }
 
     #inscription-btn {
@@ -697,7 +793,7 @@ color: #0065FC;
 
     .nav__btn {
     display:  none;
-}
+    }
 
     .nav__btn--disabled {
         height: 52px;
@@ -709,23 +805,22 @@ color: #0065FC;
         width: 52px;
         visibility: visible;
         background-color: #0065FC;
-        color: white;
+        color: white; 
         border-radius: 10px;
         border: none;
     }
     
     .container__filtres-col {
         padding-top: 5px;
+        padding-bottom: 0;
     }
 
     .grey-description {
-        padding-top: 219px;
+        padding-top: 28px;
+        margin-bottom: 0;
     }
 
     .container__filtres {
-         display: flex;
-         flex-direction: column;
-         
     }
 
     .filterbtn {
@@ -740,8 +835,30 @@ color: #0065FC;
 
     }
 
+    .card-img-aside {
+      width: 97%;
+
+    }
+
+    .card-img-activités {
+        height: 135px;
+    }
+
+    #card-img-activités1 {
+        height: 133px;
+    }
+
+    #card-img-activités2 {
+        height: 133px;
+    }
+
+    #card-img-activités3 {
+        height: 133px;
+    }
+
     .aside__card {
-        width: 334px;
+        width: 102%;
+        border-radius: 10px;
     }
     
     .aside {
@@ -764,6 +881,12 @@ color: #0065FC;
     .activities-section {
         padding-top: 20px;
     }
+
+    .card-img-activités {
+        width: 335px;
+        height: 133px;
+        dius: 10px 10px 0 0;
+    }
     
     .activities-section__grid{
         flex-direction: column;
@@ -771,7 +894,7 @@ color: #0065FC;
     }
     
     .grid-item {
-        height: 198px;
+        height: 190px;
         width: 334px;
         margin-bottom: 11px;
     }
@@ -779,14 +902,21 @@ color: #0065FC;
     .aside__cards-group {
         gap: 11px;
         display: grid;
+        margin: 0 auto;
     }
     
     .card {
-      width: 246px;
+      width: 100%;
+      margin-bottom: 11px;
     }
 
     .card-activity-title {
         width: 334px;
+        height: 58px;
+    }
+
+    .divided_img {
+        width: 335px;
     }
     
     .footer-content {

@@ -59,11 +59,11 @@ text-decoration: none;
 display: flex;
     
 transition: none;
-:;
+
 }
 
 
- a:hover {
+ a:focus {
     
 border-top-style: solid;
     
@@ -74,6 +74,9 @@ border-color: #0065FC;
 color: #0065FC;
 }
 
+button:hover {
+    background-color:  #0065FC ;
+}
 
 .slogan {
     padding-top: 50px;
@@ -163,7 +166,9 @@ color: #0065FC;
     justify-content: flex-start;
 }
 
-    
+
+
+
 .element {
 
     background-color: rgb(235, 234, 234);;
@@ -864,6 +869,7 @@ color: #0065FC;
     .aside {
         order: 0;
         margin:  0;
+        height:  800px;
     }
     
     .container__main {
